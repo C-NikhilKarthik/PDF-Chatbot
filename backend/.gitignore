@@ -1,0 +1,6 @@
+.streamlit
+.env
+__pycache__
+uploads
+faiss_index
+venv

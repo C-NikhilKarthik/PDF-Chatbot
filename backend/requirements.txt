@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-multipart
+pydantic
+uuid
+python-dotenv
+google-generativeai
+langchain
+langchain-google
+faiss-cpu
+pypdf
+aiofiles
+python-jose
