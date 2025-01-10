@@ -6,8 +6,9 @@ uuid
 python-dotenv
 google-generativeai
 langchain
-langchain-google
+langchain_community
 faiss-cpu
 pypdf
 aiofiles
 python-jose
+langchain_google_genai

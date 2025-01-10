@@ -47,7 +47,6 @@ os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 # Environment variables
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-print(f"GEMINI_API_KEY: {GEMINI_API_KEY}")
 if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY environment variable is not set")
 
