@@ -36,7 +36,7 @@ export default function ChatWindow({
     const loadChatHistory = async () => {
       try {
         const response = await fetch(
-          `http://localhost:8000/sessions/${sessionId}/history`
+          `${process.env.NEXT_PUBLIC_API_BASE_URL}/sessions/${sessionId}/history`
         );
         if (response.ok) {
           const history = await response.json();
@@ -68,7 +68,7 @@ export default function ChatWindow({
 
     try {
       const response = await fetch(
-        `http://localhost:8000/sessions/${sessionId}/chat`,
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/sessions/${sessionId}/chat`,
         {
           method: "POST",
           headers: {

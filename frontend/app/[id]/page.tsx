@@ -17,7 +17,7 @@ export default function SessionPage({ params }: { params: { id: string } }) {
     try {
       // Delete from backend
       const response = await fetch(
-        `http://localhost:8000/sessions/${params.id}`,
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/sessions/${params.id}`,
         {
           method: "DELETE",
         }

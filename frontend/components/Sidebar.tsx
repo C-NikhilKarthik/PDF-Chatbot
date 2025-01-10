@@ -28,9 +28,12 @@ export function Sidebar() {
 
   const createNewSession = async () => {
     try {
-      const response = await fetch("http://localhost:8000/sessions", {
-        method: "POST",
-      });
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/sessions`,
+        {
+          method: "POST",
+        }
+      );
       const data = await response.json();
       const newSession = { session_id: data.session_id, pdf_files: [] };
 
