@@ -120,13 +120,21 @@ The **PDF Chatbot** is an AI-powered application that allows users to upload PDF
    npm install
    ```
 
-3. Start the development server:
+3. Set up the environment variables:
+
+   - Create a `.env` file in the root directory.
+   - Add your backend url:
+     ```env
+     API_BASE_URL = 'http://localhost:8000'
+     ```
+
+4. Start the development server:
 
    ```bash
    npm run dev
    ```
 
-4. Open your browser and visit:
+5. Open your browser and visit:
    ```
    http://localhost:3000
    ```
